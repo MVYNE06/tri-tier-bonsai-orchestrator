@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONSOON | Cacao & Coffee</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <a href="#" class="logo">MONSOON</a>
+            <ul class="nav-links">
+                <li><a href="#terroir">Terroir</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#tour">Tour</a></li>
+            </ul>
+            <button class="cta-btn">Tasting Flight <span class="badge">NEW</span></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Experience the Monsoon</h1>
+            <p class="hero-subtitle">Where Indian Terroir meets Artisanal Roast</p>
+            <div class="hero-elements">
+                <span class="badge">INDIAN TERROIR • ARTISANAL ROAST</span>
+                <button class="hero-cta">Book Your Flight</button>
+            </div>
+        </div>
+        <div class="steam-particles"></div>
+    </section>
+
+    <!-- Terroir Section -->
+    <section id="terroir" class="section">
+        <h2 class="section-title">Our Estates</h2>
+        <div class="grid">
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Chikmagalur Arabica" loading="lazy">
+                <span class="badge" style="margin-bottom: 0.6rem; display: inline-block;">1,250m • Karnataka</span>
+                <h3>Chikmagalur Arabica</h3>
+                <p>High altitude beans with notes of wild blueberry, bergamot, and sweet spice roasted light-medium.</p>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=600&q=80" alt="Coorg Robusta" loading="lazy">
+                <span class="badge" style="margin-bottom: 0.6rem; display: inline-block;">950m • Western Ghats</span>
+                <h3>Coorg Robusta</h3>
+                <p>Bold, full-bodied peaberry roast with toasted cardamom aromatics and creamy molasses crema.</p>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=600&q=80" alt="Idukki Dark Cacao" loading="lazy">
+                <span class="badge" style="margin-bottom: 0.6rem; display: inline-block;">Single Estate • Kerala</span>
+                <h3>Idukki 72% Dark Cacao</h3>
+                <p>Box-fermented wild tree cacao stone-ground for 72 hours, revealing dark cherry and smoky oak.</p>
+            </div>
+            <div class="card">
+                <img class="card-img" src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&w=600&q=80" alt="Anamalai Chocolate" loading="lazy">
+                <span class="badge" style="margin-bottom: 0.6rem; display: inline-block;">Biodynamic • Tamil Nadu</span>
+                <h3>Anamalai Spiced Chocolate</h3>
+                <p>Silky 68% micro-batch chocolate infused with native Tellicherry black pepper and wild nutmeg.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tasting Menu Section -->
+    <section id="menu" class="section">
+        <h2 class="section-title">Curated Flights</h2>
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="coffee">Coffee</button>
+            <button class="filter-btn" data-filter="chocolate">Chocolate</button>
+            <button class="filter-btn" data-filter="pairings">Pairings</button>
+        </div>
+        <div class="menu-grid">
+            <!-- Items will be injected by JS -->
+        </div>
+    </section>
+
+    <!-- Tour Schedule Banner -->
+    <div id="tour-banner" class="tour-banner">
+        <div class="banner-content">
+            <h3>Upcoming Tour</h3>
+            <div id="countdown">
+                <span id="days">00</span> Days
+                <span id="hours">00</span> Hours
+                <span id="minutes">00</span> Minutes
+                <span id="seconds">00</span> Seconds
+            </div>
+        </div>
+    </div>
+
+    <!-- Off-canvas Drawer -->
+    <div id="flight-drawer" class="offcanvas">
+        <div class="offcanvas-content">
+            <button class="close-btn">&times;</button>
+            <h2>Tasting Flight</h2>
+            <div id="drawer-items"></div>
+            <div class="drawer-total">Total: ₹0</div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Toast Container -->
+    <div id="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
